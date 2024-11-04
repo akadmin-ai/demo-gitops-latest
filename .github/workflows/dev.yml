@@ -1,10 +1,9 @@
 name: Publish 🚀
 
 on:
-  pull_request:
-    types: [closed]
-    branches:
-      - main
+    push:
+      branches:
+        - dev
 
 env:
   AZURE_WEBAPP_NAME: demo-gitops-webapp-prod
